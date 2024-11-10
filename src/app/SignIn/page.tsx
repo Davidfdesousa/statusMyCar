@@ -1,20 +1,21 @@
 import React from "react";
 
 import "./styles.css";
+import Link from "next/link";
 
 export default function SignIn() {
   return (
     <article>
       <section className="smc-container">
         <div className="container mx-auto">
-          <h1 className="text-2xl mb-4 pl-4">Sign In</h1>
+          <h1 className="text-2xl mb-4 pl-4">Entrar</h1>
           <form className="max-w-sm mx-auto">
             <div className="mb-5">
               <label
                 htmlFor="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Your email
+                Email
               </label>
               <input
                 type="email"
@@ -29,7 +30,7 @@ export default function SignIn() {
                 htmlFor="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Your password
+                Senha
               </label>
               <input
                 type="password"
@@ -41,10 +42,16 @@ export default function SignIn() {
 
             <button
               type="submit"
-              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-4"
             >
               Submit
             </button>
+
+            <Link href={"#"}>
+              <p className="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                Esqueci minha senha
+              </p>
+            </Link>
           </form>
         </div>
       </section>

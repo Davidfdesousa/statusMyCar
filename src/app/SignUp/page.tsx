@@ -7,14 +7,77 @@ export default function SignUp() {
     <article>
       <section className="smc-container">
         <div className="container mx-auto">
-        <h1 className="text-2xl mb-4 pl-4">Sign Up</h1>
+          <h1 className="text-2xl mb-4 pl-4">Registrar-se</h1>
           <form className="max-w-sm mx-auto">
             <div className="mb-5">
               <label
                 form-hmtl="email"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Your email
+                Nome
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label
+                form-hmtl="email"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Celular
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+            <div className="mb-5">
+              <label
+                form-hmtl="email"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Data de nascimento
+              </label>
+              <input
+                type="email"
+                id="email"
+                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                placeholder="name@flowbite.com"
+                required
+              />
+            </div>
+
+            <div className="mb-5">
+              <label
+                for-html="gender"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Sexo
+              </label>
+              <select
+                id="gender"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              >
+                <option>Selecione</option>
+                <option>Feminino</option>
+                <option>Masculino</option>
+                <option>Prefiro não dizer</option> 
+              </select>
+            </div>
+            <div className="mb-5">
+              <label
+                form-hmtl="email"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              >
+                Email
               </label>
               <input
                 type="email"
@@ -29,7 +92,7 @@ export default function SignUp() {
                 form-hmtl="password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Your password
+                Senha
               </label>
               <input
                 type="password"
@@ -43,7 +106,7 @@ export default function SignUp() {
                 form-hmtl="repeat-password"
                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
               >
-                Repeat password
+                Repita a senha
               </label>
               <input
                 type="password"
@@ -66,12 +129,12 @@ export default function SignUp() {
                 form-hmtl="terms"
                 className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
-                I agree with the{" "}
+                Aceito os{" "}
                 <a
                   href="#"
                   className="text-blue-600 hover:underline dark:text-blue-500"
                 >
-                  terms and conditions
+                  termos e condiçoes
                 </a>
               </label>
             </div>
@@ -79,7 +142,7 @@ export default function SignUp() {
               type="submit"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              Register new account
+              Registrar
             </button>
           </form>
         </div>

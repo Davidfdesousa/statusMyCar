@@ -7,8 +7,9 @@ export default function SignUp() {
     <article>
       <section className="smc-container">
         <div className="container mx-auto">
-          <h1 className="text-2xl mb-4 pl-4">Registrar-se</h1>
+         
           <form className="max-w-sm mx-auto">
+          <h1 className="text-2xl mb-4">Registrar-se</h1>
             <div className="mb-5">
               <label
                 form-hmtl="email"

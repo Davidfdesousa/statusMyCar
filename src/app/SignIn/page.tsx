@@ -7,15 +7,15 @@ export default function SignIn() {
   return (
     <article>
       <section className="smc-container">
-        <div className="w-full lg:max-w-xl p-4 ">
-          <h2 className="text-2xl font-medium text-gray-900 dark:text-white">
-            Entrar
-          </h2>
-          <form className="mt-8 space-y-6" action="#">
+        <div className="container mx-auto">
+          <form className="max-w-sm mx-auto" action="#">
+            <h2 className="text-2xl font-medium text-gray-900 dark:text-white mb-4">
+              Entrar
+            </h2>
             <div>
               <label
                 for-html="email"
-                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white "
               >
                 Email
               </label>
@@ -23,7 +23,7 @@ export default function SignIn() {
                 type="email"
                 name="email"
                 id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-4"
                 placeholder="name@company.com"
                 required
               />
@@ -40,20 +40,20 @@ export default function SignIn() {
                 name="password"
                 id="password"
                 placeholder="••••••••"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-4"
                 required
               />
             </div>
             <div>
               <Link href={"#"}>
-                <p className="ms-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
+                <p className="ms-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500 mb-4">
                   Esqueceu a senha?
                 </p>
               </Link>
             </div>
             <button
               type="submit"
-              className="w-full px-4 py-2 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className="w-full px-4 py-2 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 mb-4"
             >
               Entrar
             </button>
